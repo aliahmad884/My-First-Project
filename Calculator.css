@@ -1,0 +1,157 @@
+/* Dark Theme CSS */
+.mainDivDark {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+    position: absolute;
+    background-color:  #565bf8;
+}
+
+.childDivDark {
+    border: transparent;
+    border-radius: 5px;
+    /* background-color: rgb(107, 107, 107); */
+    background-color: black;
+}
+
+.displayDark {
+    width: 100%;
+    height: 85px;
+    border-radius: 5px;
+    border: 1px solid rgb(81, 80, 80);
+    background-color: rgb(41, 40, 40);
+    text-align: right;
+    box-shadow: 0px -4px 5px rgb(59, 56, 56);
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.displayDark:hover {
+    background-color: rgb(38, 37, 37);
+}
+
+.inputDark {
+    background-color: rgb(41, 40, 40);
+    height: 65px;
+    width: 65px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: -8px -8px 10px rgb(20, 19, 19);
+    color: white;
+}
+
+.btnThemeDark1 {
+    width: 15%;
+    margin-right: -5px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: small;
+    padding: 2px 0px;
+    border: transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgb(186, 183, 183);
+    color: black;
+}
+.btnThemeDark2 {
+    width: 15%;
+    margin-left: -5px;
+    font-size: small;
+    padding: 2px 0px;
+    border: transparent;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    color: whitesmoke;
+    background-color: rgb(89, 83, 83);
+}
+
+.btnThemeDark:hover {
+    background-color: lightgrey;
+}
+
+.inputDark:hover {
+    background-color: rgb(66, 63, 63);
+}
+
+
+/* Light Theme CSS */
+.mainDivLight {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-flow: wrap;
+    position: absolute;
+    background-color: #565bf8;
+}
+
+.childDivLight {
+    border: transparent;
+    border-radius: 5px;
+    /* background-color: rgb(107, 107, 107); */
+    background-color: rgb(153, 153, 153);
+}
+
+.displayLight {
+    width: 100%;
+    height: 85px;
+    border-radius: 5px;
+    border: 1px solid rgb(246, 246, 246);
+    text-align: right;
+    /* box-shadow: 0px -4px 5px rgb(190, 187, 187); */
+    font-size: x-large;
+    color: black;
+}
+
+.displayLight:hover {
+    background-color: rgb(240, 236, 236);
+}
+
+.inputLight {
+    background-color: rgb(244, 240, 240);
+    height: 65px;
+    width: 65px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: -8px -8px 25px rgb(165, 165, 165);
+    color: black;
+}
+
+.btnThemeLight1 {
+    width: 15%;
+    margin-right: -5px;
+    margin-left: 4px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    font-size: small;
+    padding: 2px 0px;
+    border: transparent;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgb(89, 83, 83);
+    color: whitesmoke;
+}
+.btnThemeLight2 {
+    width: 15%;
+    margin-left: -5px;
+    font-size: small;
+    padding: 2px 0px;
+    border: transparent;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.btnThemeLight:hover {
+    background-color: rgb(113, 113, 113);
+}
+
+.inputLight:hover {
+    background-color: rgb(199, 199, 199);
+}

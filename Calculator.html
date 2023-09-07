@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+</style>
+
+<head>
+    <title>Calculator-1</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Calculator.css">
+</head>
+
+<body>
+
+    <div>
+        <small><button class="btnThemeDark1" type="button" onclick="theme()"
+            id="btnThemeLight">Light</button></small>
+    <small><button class="btnThemeDark2" type="button" onclick="theme()" id="btnThemeDark">Dark</button></small>
+    </div>
+    <div id="result" class="mainDivDark">
+        <div class="childDivDark">
+            <form>
+                <div>
+                    <input class="displayDark" type="text" name="Display">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="reset" class="inputDark" style=" color: rgb(61, 110, 200);" value="AC">
+                    <input type="button" class="inputDark" style=" color: rgb(61, 110, 200);" value="DE" onclick="Display.value= Display.value.toString().
+                    slice(0,-1)">
+                    <input type="button" class="inputDark" style="font-weight: bolder; color: rgb(61, 110, 200);"
+                        value="." onclick="Display.value+='.'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="/"
+                        onclick="Display.value+='/'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+
+                    <input type="button" class="inputDark" value="7" onclick="Display.value+='7'">
+                    <input type="button" class="inputDark" value="8" onclick="Display.value+='8'">
+                    <input type="button" class="inputDark" value="9" onclick="Display.value+='9'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="*"
+                        onclick="Display.value+='*'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="4" onclick="Display.value+='4'">
+                    <input type="button" class="inputDark" value="5" onclick="Display.value+='5'">
+                    <input type="button" class="inputDark" value="6" onclick="Display.value+='6'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="-"
+                        onclick="Display.value+='-'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="1" onclick="Display.value+='1'">
+                    <input type="button" class="inputDark" value="2" onclick="Display.value+='2'">
+                    <input type="button" class="inputDark" value="3" onclick="Display.value+='3'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="+"
+                        onclick="Display.value+='+'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="00" onclick="Display.value+='00'">
+                    <input type="button" class="inputDark" value="0" onclick="Display.value+='0'">
+                    <input type="button" class="inputDark"
+                        style="width: 135px; font-weight: 600; color: rgb(61, 110, 200);" value="="
+                        onclick="Display.value=eval(Display.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        document.getElementById("btnThemeLight").addEventListener("click", function () {
+            let temp = `<div class="mainDivLight">
+        <div class="childDivLight">
+            <form>
+                <div>
+                    <input class="displayLight" type="text" name="Display">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="reset" class="inputLight" style="color: rgb(61, 110, 200);" value="AC">
+                    <input type="button" class="inputLight" style="color: rgb(61, 110, 200);" value="DE" onclick="Display.value= Display.value.toString().
+                    slice(0,-1)">
+                    <input type="button" class="inputLight" style="font-weight: bolder;color: rgb(61, 110, 200);"
+                        value="." onclick="Display.value+='.'">
+                    <input type="button" class="inputLight" style="font-weight: 600; color: rgb(61, 110, 200);"
+                        value="/" onclick="Display.value+='/'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+
+                    <input type="button" class="inputLight" value="7" onclick="Display.value+='7'">
+                    <input type="button" class="inputLight" value="8" onclick="Display.value+='8'">
+                    <input type="button" class="inputLight" value="9" onclick="Display.value+='9'">
+                    <input type="button" class="inputLight" style="font-weight: 600;color: rgb(61, 110, 200);" value="*"
+                        onclick="Display.value+='*'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputLight" value="4" onclick="Display.value+='4'">
+                    <input type="button" class="inputLight" value="5" onclick="Display.value+='5'">
+                    <input type="button" class="inputLight" value="6" onclick="Display.value+='6'">
+                    <input type="button" class="inputLight" style="font-weight: 600;color: rgb(61, 110, 200);" value="-"
+                        onclick="Display.value+='-'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputLight" value="1" onclick="Display.value+='1'">
+                    <input type="button" class="inputLight" value="2" onclick="Display.value+='2'">
+                    <input type="button" class="inputLight" value="3" onclick="Display.value+='3'">
+                    <input type="button" class="inputLight" style="font-weight: 600;color: rgb(61, 110, 200);" value="+"
+                        onclick="Display.value+='+'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="button" class="inputLight" value="00" onclick="Display.value+='00'">
+                    <input type="button" class="inputLight" value="0" onclick="Display.value+='0'">
+                    <input type="button" class="inputLight"
+                        style="width: 135px; font-weight: 600;color: rgb(61, 110, 200);" value="="
+                        onclick="Display.value=eval(Display.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+`;
+
+            document.getElementById("result").innerHTML = temp;
+        });
+
+        document.getElementById("btnThemeDark").addEventListener("click", function () {
+          
+
+            let temp = `<div class="mainDivDark">
+        <div class="childDivDark">
+            <form>
+                <div>
+                    <input class="displayDark" type="text" name="Display">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="reset" class="inputDark" style=" color: rgb(61, 110, 200);" value="AC">
+                    <input type="button" class="inputDark" style=" color: rgb(61, 110, 200);" value="DE" onclick="Display.value= Display.value.toString().
+                    slice(0,-1)">
+                    <input type="button" class="inputDark" style="font-weight: bolder; color: rgb(61, 110, 200);"
+                        value="." onclick="Display.value+='.'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="/"
+                        onclick="Display.value+='/'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+
+                    <input type="button" class="inputDark" value="7" onclick="Display.value+='7'">
+                    <input type="button" class="inputDark" value="8" onclick="Display.value+='8'">
+                    <input type="button" class="inputDark" value="9" onclick="Display.value+='9'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="*"
+                        onclick="Display.value+='*'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="4" onclick="Display.value+='4'">
+                    <input type="button" class="inputDark" value="5" onclick="Display.value+='5'">
+                    <input type="button" class="inputDark" value="6" onclick="Display.value+='6'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="-"
+                        onclick="Display.value+='-'">
+                </div>
+                <div style="margin:5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="1" onclick="Display.value+='1'">
+                    <input type="button" class="inputDark" value="2" onclick="Display.value+='2'">
+                    <input type="button" class="inputDark" value="3" onclick="Display.value+='3'">
+                    <input type="button" class="inputDark" style="font-weight: 600; color: rgb(61, 110, 200);" value="+"
+                        onclick="Display.value+='+'">
+                </div>
+                <div style="margin: 5px 7px 5px 7px;">
+                    <input type="button" class="inputDark" value="00" onclick="Display.value+='00'">
+                    <input type="button" class="inputDark" value="0" onclick="Display.value+='0'">
+                    <input type="button" class="inputDark"
+                        style="width: 135px; font-weight: 600; color: rgb(61, 110, 200);" value="="
+                        onclick="Display.value=eval(Display.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+
+`;
+
+
+
+            document.getElementById("result").innerHTML = temp;
+        });
+
+
+    </script>
+</body>
+
+</html>
