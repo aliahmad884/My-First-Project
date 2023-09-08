@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-
-<style>
-
-</style>
-
 <head>
+
+    <link rel="shortcut icon" type="x-icon" href="calculator1.ico">
+
     <title>Calculator-1</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="Calculator.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
 
     <div>
-        <small><button class="btnThemeDark1" type="button" onclick="theme()"
-            id="btnThemeLight">Light</button></small>
-    <small><button class="btnThemeDark2" type="button" onclick="theme()" id="btnThemeDark">Dark</button></small>
+        <small><button class="btnThemeDark1" type="button" onclick="theme()" id="btnThemeLight">Light</button></small>
+        <small><button class="btnThemeDark2" type="button" onclick="theme()" id="btnThemeDark">Dark</button></small>
     </div>
     <div id="result" class="mainDivDark">
         <div class="childDivDark">
@@ -124,7 +122,7 @@
         });
 
         document.getElementById("btnThemeDark").addEventListener("click", function () {
-          
+
 
             let temp = `<div class="mainDivDark">
         <div class="childDivDark">
